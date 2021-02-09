@@ -96,4 +96,4 @@ foreach($trains as $val){
     $count = $count + 1;
 }
 
-require_once './tpl/jrkyoto.php';
+require_once './tpl/ako.php';
