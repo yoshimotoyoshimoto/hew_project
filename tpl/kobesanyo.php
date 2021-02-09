@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <link href="./css/style.css" rel="stylesheet">
-<title>列車走行位置|JR京都線</title>
+<title>列車走行位置|JR神戸線・山陽線</title>
 </head>
 
 <body>
