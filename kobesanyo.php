@@ -36,6 +36,8 @@ foreach($trains as $val){
     if($val['destination_line'] == 'kosei'){
         $val['direction'] ='2';
         $val['destination_line'] = '湖西線経由';
+    }elseif($val['destination_line'] == 'tozai'){
+        $val['destination_line'] = 'JR東西線経由';
     }else{
         $val['destination_line'] = '-';
     }
