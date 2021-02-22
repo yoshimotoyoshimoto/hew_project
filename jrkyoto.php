@@ -1,6 +1,10 @@
 <?php
 //DB接続
 $link = @mysqli_connect('localhost','root','','hew_test');
+if(!$link){
+    header('location:./index.php');
+    exit;
+}
 //文字設定
 mysqli_set_charset($link,'utf8');
 //JR西日本列車走行位置からJSON情報取得
