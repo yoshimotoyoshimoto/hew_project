@@ -51,8 +51,8 @@ function twd() {
         foreach ($tweet->statuses as $key=>$value) {
             $result[] = $value->text;
         }
-        if (!empty($rusult)) {
-            $return_tw[$rails_data[$i]] = count($rusult);
+        if (!empty($result)) {
+            $return_tw[$rails_data[$i]] = count($result);
         }  
         $i++;
     }
