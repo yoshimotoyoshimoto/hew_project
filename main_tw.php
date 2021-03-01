@@ -49,7 +49,7 @@ function twd() {
         $tweet = $connection->get("search/tweets", array("q" => $val, 'count' => 3, 'result_type' => 'recent'));
         $result = [];
         foreach ($tweet->statuses as $key=>$value) {
-            $rusult[] = $value->text;
+            $result[] = $value->text;
         }
         if (!empty($rusult)) {
             $return_tw[$rails_data[$i]] = count($rusult);
