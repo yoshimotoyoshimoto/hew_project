@@ -53,6 +53,8 @@ function twd() {
         }
         if (!empty($result)) {
             $return_tw[$rails_data[$i]] = count($result);
+             print("<p>".$rails_data[$i]."</p>");
+
         }  
         $i++;
     }
