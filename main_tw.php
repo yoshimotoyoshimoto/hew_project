@@ -48,6 +48,7 @@ function twd() {
     foreach ($search_data as $k => $val) {
         $tweet = $connection->get("search/tweets", array("q" => $val, 'count' => 3, 'result_type' => 'recent'));
         $result = [];
+        var_dump($tweet);
         foreach ($tweet->statuses as $key=>$value) {
             $result[] = $value->text;
             print("<p>".$value->text."</p>");
