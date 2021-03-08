@@ -471,6 +471,7 @@ mark,
 
 .blockquote-footer {
   display: block;
+  text-align: center;
   font-size: 80%;
   color: #6c757d;
 }
@@ -6178,7 +6179,10 @@ a.close.disabled {
   border-color: transparent;
   border-style: solid;
 }
-
+.bs-component {
+    width: 100%;
+    padding: 20px;
+}
 .bs-tooltip-top, .bs-tooltip-auto[x-placement^="top"] {
   padding: 0.4rem 0;
 }

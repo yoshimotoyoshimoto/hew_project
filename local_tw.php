@@ -6,10 +6,10 @@ use Abraham\TwitterOAuth\TwitterOAuth;
 
 function twd($rails_data) {
 
-    $consumerKey       = getenv("CK");
-    $consumerSecret    = getenv("CS");
-    $accessToken       = getenv("AT");
-    $accessTokenSecret = getenv("AC");
+    $consumerKey       = "fmg8i85xa4zBmJtXA201JZTH6";
+    $consumerSecret    = "gjXCqHIdhtOwQZJW6KAMfIzaRXauULDHXdVCO9ql9tL6AKfhMG";
+    $accessToken       = "3185158440-vOFHYc5cuPae13T2aks9ahWts9bHgivE5M2G8zq";
+    $accessTokenSecret = "21LQNC0Dwnd12eVV5SdGhtFzf3ghczKCiwmD0y09tnytH";
     //インスタンスを生成
     $connection = new TwitterOAuth($consumerKey, $consumerSecret, $accessToken, $accessTokenSecret);
     
@@ -53,10 +53,10 @@ function twd($rails_data) {
 
 function twd2($rails_data) {
 
-    $consumerKey       = getenv("CK");
-    $consumerSecret    = getenv("CS");
-    $accessToken       = getenv("AT");
-    $accessTokenSecret = getenv("AC");
+    $consumerKey       = "fmg8i85xa4zBmJtXA201JZTH6";
+    $consumerSecret    = "gjXCqHIdhtOwQZJW6KAMfIzaRXauULDHXdVCO9ql9tL6AKfhMG";
+    $accessToken       = "3185158440-vOFHYc5cuPae13T2aks9ahWts9bHgivE5M2G8zq";
+    $accessTokenSecret = "21LQNC0Dwnd12eVV5SdGhtFzf3ghczKCiwmD0y09tnytH";
     //インスタンスを生成
     $connection = new TwitterOAuth($consumerKey, $consumerSecret, $accessToken, $accessTokenSecret);
     
@@ -100,10 +100,10 @@ function twd2($rails_data) {
 
 function twd3($rails_data) {
 
-    $consumerKey       = getenv("CK");
-    $consumerSecret    = getenv("CS");
-    $accessToken       = getenv("AT");
-    $accessTokenSecret = getenv("AC");
+    $consumerKey       = "fmg8i85xa4zBmJtXA201JZTH6";
+    $consumerSecret    = "gjXCqHIdhtOwQZJW6KAMfIzaRXauULDHXdVCO9ql9tL6AKfhMG";
+    $accessToken       = "3185158440-vOFHYc5cuPae13T2aks9ahWts9bHgivE5M2G8zq";
+    $accessTokenSecret = "21LQNC0Dwnd12eVV5SdGhtFzf3ghczKCiwmD0y09tnytH";
     //インスタンスを生成
     $connection = new TwitterOAuth($consumerKey, $consumerSecret, $accessToken, $accessTokenSecret);
     
@@ -148,10 +148,10 @@ function twd3($rails_data) {
 
 function twd4($rails_data) {
 
-    $consumerKey       = getenv("CK");
-    $consumerSecret    = getenv("CS");
-    $accessToken       = getenv("AT");
-    $accessTokenSecret = getenv("AC");
+    $consumerKey       = "fmg8i85xa4zBmJtXA201JZTH6";
+    $consumerSecret    = "gjXCqHIdhtOwQZJW6KAMfIzaRXauULDHXdVCO9ql9tL6AKfhMG";
+    $accessToken       = "3185158440-vOFHYc5cuPae13T2aks9ahWts9bHgivE5M2G8zq";
+    $accessTokenSecret = "21LQNC0Dwnd12eVV5SdGhtFzf3ghczKCiwmD0y09tnytH";
     //インスタンスを生成
     $connection = new TwitterOAuth($consumerKey, $consumerSecret, $accessToken, $accessTokenSecret);
     
