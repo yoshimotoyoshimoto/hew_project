@@ -2,6 +2,8 @@
 //処理を書くファイル
 //const呼び出し
 require_once './const.php';
+$class = new ConstClass;
+
 //function呼び出し
 require_once './func.php';
 //session開始

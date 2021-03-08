@@ -2,6 +2,8 @@
 //処理を書くファイル
 //const呼び出し
 require_once './const.php';
+$class = new ConstClass;
+
 //function呼び出し
 require_once './func.php';
 //session開始
@@ -30,7 +32,7 @@ if(!empty($_POST['login_check'])){
     //ここまでエラーがない場合
     if(!isset($_SESSION['error_flag'])){
         //DB接続
-        $link = @mysqli_connect(HOST,USER_ID,PASSWORD,DB_NAME);
+        $link = @mysqli_connect($class::HOST,$class::USER_ID,$class::PASSWORD,$class::DB_NAME);
         //エラー処理(DB接続不可)
         if(!$link){
             $_SESSION['db_error'] = 'システムエラーが発生しました(エラーコード：ER-DB01)';

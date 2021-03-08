@@ -3,9 +3,10 @@
 require_once './const.php';
 //session開始
 session_start();
+$class = new ConstClass;
 //DB接続
-$link = @mysqli_connect(HOST,USER_ID,PASSWORD,DB_NAME);
-//文字設定
+$link = @mysqli_connect($class::HOST,$class::USER_ID,$class::PASSWORD,$class::DB_NAME);
+
 mysqli_set_charset($link,'utf8');
 
 //路線名受け取り
