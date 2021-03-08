@@ -1,4 +1,7 @@
 <?php
+
+ini_set("display_errors", 1);
+error_reporting(E_ALL);
 //処理を書くファイル
 //const呼び出し
 require_once './const.php';
