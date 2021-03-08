@@ -115,7 +115,7 @@
                 <h2 class="mb-4" style="font-size: 1.4em; font-weight: 200;">地域別リンク</h2>
                 <div class="mb-4">
                     <ul class="list-group">
-                        <li class="list-group-item"><a href="#hokaidou">北海道地方</a></li>
+                        <li class="list-group-item"><a href="#hokkaidou">北海道地方</a></li>
                         <li class="list-group-item"><a href="#touhoku">東北地方</a></li>
                         <li class="list-group-item"><a href="#kantou">関東地方</a></li>
                         <li class="list-group-item"><a href="#tyubu">中部地方</a></li>
