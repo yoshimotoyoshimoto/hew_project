@@ -21,7 +21,6 @@ if (curl_errno($ch)) {
 //curlセッション終了
 curl_close($ch);
 //文字コード変換(文字化け対策)
-$result = mb_convert_encoding($result,'utf-8','ASCII, JIS, UTF-8, SJIS, sjis-win');
 //取得した情報の返却
 return $result;
 }
