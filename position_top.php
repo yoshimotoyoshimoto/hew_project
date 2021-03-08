@@ -1,4 +1,7 @@
 <?php
+
+ini_set("display_errors", 1);
+error_reporting(E_ALL);
 //定数呼び出し
 require_once './const.php';
 //DB接続
