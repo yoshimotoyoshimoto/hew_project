@@ -2,7 +2,8 @@
 ini_set("display_errors", 1);
 error_reporting(E_ALL);
 //定数呼び出し
-
+// require_once './const.php';
+// $class = new ConstClass;
 //DB接続
 $link = @mysqli_connect(getenv('DB_HOSTNAME'),getenv('DB_USERNAME'),getenv('DB_PASSWORD'),getenv('DATA_NAME'));
 

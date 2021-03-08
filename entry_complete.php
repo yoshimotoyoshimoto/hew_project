@@ -1,8 +1,8 @@
 <?php
 //処理を書くファイル
 //const呼び出し
-require_once './const.php';
-$class = new ConstClass;
+// require_once './const.php';
+// $class = new ConstClass;
 
 //function呼び出し
 require_once './func.php';
@@ -31,7 +31,7 @@ if(isset($_SESSION['status'])){
         $password = pass_hash($password,$salt,$stretch);
 
         //DB接続
-        $link = @mysqli_connect($class::HOST,$class::USER_ID,$class::PASSWORD,$class::DB_NAME);
+        $link = @mysqli_connect(getenv('DB_HOSTNAME'),getenv('DB_USERNAME'),getenv('DB_PASSWORD'),getenv('DATA_NAME'));
         //エラー処理(DB接続不可)
         if(!$link){
             $_SESSION['db_error'] = 'システムエラーが発生しました(エラーコード：ER-DB01)';

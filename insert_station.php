@@ -1,6 +1,6 @@
 <?php
 //DB接続
-$link = @mysqli_connect('localhost','root','','hew_test');
+$link = @mysqli_connect(getenv('DB_HOSTNAME'),getenv('DB_USERNAME'),getenv('DB_PASSWORD'),getenv('DATA_NAME'));
 //文字設定
 mysqli_set_charset($link,'utf8');
 if(!empty($_POST['insert'])){

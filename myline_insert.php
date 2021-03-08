@@ -5,8 +5,8 @@ require_once 'function.php';
 //session開始
 session_start();
 //const呼び出し
-require_once './const.php';
-$class = new ConstClass;
+// require_once './const.php';
+// $class = new ConstClass;
 //DB接続
 
 //路線名取得
@@ -42,7 +42,7 @@ if(!empty($_POST['line_insert'])){
     }
     $line = $_POST['line'];
     //DB接続
-    $link = @mysqli_connect($class::HOST,$class::USER_ID,$class::PASSWORD,$class::DB_NAME);
+    $link = @mysqli_connect(getenv('DB_HOSTNAME'),getenv('DB_USERNAME'),getenv('DB_PASSWORD'),getenv('DATA_NAME'));
     //エラー処理(DB接続不可)
     if(!$link){
         $_SESSION['db_error'] = 'システムエラーが発生しました(エラーコード：ER-DB01)';
